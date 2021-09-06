@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:id="@+id/updatelayout">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Update Food"
+        android:textColor="#02707E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Title"
+        android:textColor="@color/black"
+        android:textColorHint="#02707E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:hint="Food Description"
+        android:textColor="@color/black"
+        android:textColorHint="#02707E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle"
+        app:layout_constraintVertical_bias="0.040"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/tvcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="240dp"
+        android:text="Food Category"
+        android:textColor="#02707E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDesc"
+        app:layout_constraintVertical_bias="0.040"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <RadioGroup
+        android:id="@+id/rgCategory"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        android:textColorHint="#02707E"
+        app:layout_constraintTop_toBottomOf="@id/tvcategory"
+        app:layout_constraintBottom_toTopOf="@id/etTime"
+        app:layout_constraintVertical_bias="0.040"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp">
+        <RadioButton
+            android:id="@+id/rbnonveg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-veg"
+
+            app:layout_constraintVertical_bias="0.059"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <RadioButton
+            android:id="@+id/rbveg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veg"
+
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preparation Time"
+        android:textColor="@color/black"
+        android:textColorHint="#02707E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategory"
+        app:layout_constraintVertical_bias="0.29"
+        tools:layout_editor_absoluteX="30dp" />
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-black"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTime"
+        app:layout_constraintVertical_bias="0.14"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#F44336"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

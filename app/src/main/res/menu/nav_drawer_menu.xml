@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_baseline_mail_24"
+        android:iconTint="@color/black"
+        android:id="@+id/contact"
+        android:title="Contact Us"/>
+    <item
+        android:icon="@drawable/ic_baseline_help_24"
+        android:iconTint="@color/black"
+        android:id="@+id/help"
+        android:title="Help"/>
+    <item
+        android:icon="@drawable/ic_baseline_share_24"
+        android:iconTint="@color/black"
+        android:id="@+id/miItem3"
+        android:title="Share"/>
+    <item
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:id="@+id/miItem4"
+        android:iconTint="@color/black"
+        android:title="Rate Us"/>
+    <item
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/miItem5"
+        android:iconTint="@color/black"
+        android:title="Setting"/>
+    <item
+        android:icon="@drawable/ic_baseline_login_24"
+        android:iconTint="@color/black"
+        android:id="@+id/miItem6"
+        android:title="Log Out"/>
+
+</menu>

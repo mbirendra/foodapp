@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/body"
+    tools:context=".ui.saved.SaveddFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraintlayout"
+        android:padding="30dp"
+        android:layout_height="500dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Add Recipe"
+            android:textColor="#F62D09"
+            android:textSize="50sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="-14dp" />
+
+        <EditText
+            android:id="@+id/etRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe Title"
+            android:textColor="@color/black"
+            android:textColorHint="#F62D09"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.048"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp" />
+
+
+        <ImageView
+            android:id="@+id/RecipeImg"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:background="@drawable/imageback"
+            app:layout_constraintBottom_toBottomOf="@+id/etRecipeTitle"
+            app:layout_constraintTop_toTopOf="@+id/etRecipeDesc"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp" />
+
+        <EditText
+            android:id="@+id/etRecipeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipe Description"
+            android:textColor="@color/black"
+            android:textColorHint="#F62D09"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeImg"
+            app:layout_constraintVertical_bias="0.040"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Category"
+            android:textSize="40sp"
+            android:textColor="#F62D09"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRecipeDesc"
+            app:layout_constraintVertical_bias="0.040"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp" />
+
+        <RadioGroup
+            android:id="@+id/rgFoodCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColorHint="#F62D09"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.040"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+            <RadioButton
+                android:id="@+id/rbVeg"
+                android:layout_width="match_parent"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:text="Veg" />
+
+            <RadioButton
+                android:id="@+id/rbNonVeg"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-veg" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etPrepTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preparation Time"
+            android:textColorHint="#F62D09"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgFoodCategory"
+            app:layout_constraintVertical_bias="0.040"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="#F62D09"
+            android:fontFamily="sans-serif-black"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:text="Add Recipe"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPrepTime"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
